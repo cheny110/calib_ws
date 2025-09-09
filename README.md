@@ -66,9 +66,9 @@ These two projects has been added as submodule of this repository, you can sync 
 ```
 git submodle update --init
 ```
-###  **1.4. ceres-solver**
+###  **1.4. ceres-solver & OpenMP**
 ```
-sudo apt install libceres-dev
+sudo apt install libceres-dev libomp-dev
 ```
 
 ### **1.5. Getting start with Docker**  

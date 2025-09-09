@@ -56,7 +56,7 @@ find_package(Ceres REQUIRED)
 find_package(ament_index_cpp  REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
-find_package(Python3 COMPONENTS Interpreter Development)
+find_package(Python3 COMPONENTS Development)
 set(Python3_EXECUTABLE "/usr/bin/python3")
 find_path(MATPLOTLIB_CPP_INCLUDE_DIRS "matplotlibcpp.h")
 
