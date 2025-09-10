@@ -13,11 +13,11 @@ This is ros2 version **LI_Init** project, your can find the orignal repository a
 
 ### Pipeline
 
-<div align="center"><img src="image/pipeline.png" width=100% /></div>
+<div align="center"><img src="src/lidar_imu_init2/image/pipeline.png" width=100% /></div>
 
 ### Excite the Sensors
 
-<div align="center"><img src="image/Excitation.gif" width=100% /></div>
+<div align="center"><img src="src/lidar_imu_init2/image/Excitation.gif" width=100% /></div>
 
 ### Related Paper
 
@@ -41,7 +41,7 @@ orignal accompanying videos are now available on **YouTube** (click below images
 
 <div align="center">
     <a href="https://www.youtube.com/watch?v=WiHgcPpKwvU" target="_blank">
-    <img src="image/video_cover.png" width=70% />
+    <img src="src/lidar_imu_init2/image/video_cover.png" width=70% />
 </div>
 
 
@@ -82,6 +82,9 @@ Don't forget to install additional dependencies list above.
 ## 2. Build
 
 - Clone the repository:
+   ```
+    git clone https://github.com/cheny110/calib_ws -b master
+   ```
 - Sync submodules :
     ```
     cd calib_ws
@@ -89,7 +92,7 @@ Don't forget to install additional dependencies list above.
    ```
 - build and install livox sdk if you used livox lidars (optional)
 ```
-cd calib_ws/dependencies/
+cd calib_ws/dependencies/Livox-SDK2
 mkdir build && cd build
 cmake .. 
 make -j
@@ -105,15 +108,6 @@ sudo make install
     source calib_ws/install/setup.sh
     colcon build --packages-select lidar_imu_init2
   ```
-
-
-
-
-```
-cd ..
-catkin_make -j
-source devel/setup.bash
-```
 
 ## 3. Run Your Own Data
 
@@ -166,9 +160,9 @@ Use `rosbag info xxx.bag` to get the correct topic name.
 
 Here are the pointcloud map constructed by our LiDAR odometry (FAST-LO).
 
-<div align="center"><img src="image/point_map.png" width=100% /></div>
+<div align="center"><img src="src/lidar_imu_init2/image/point_map.png" width=100% /></div>
 
-<div align="center"><img src="image/point_map1.png" width=100% /></div>
+<div align="center"><img src="src/lidar_imu_init2/image/point_map1.png" width=100% /></div>
 
 ## 5. Acknowledgments
 
