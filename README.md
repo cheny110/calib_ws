@@ -1,6 +1,6 @@
 ## Robust Real-time LiDAR-inertial Initialization (ROS2 Version)
 
-This is ros2 version **LI_Init** project, your can find the orignal repository at [LI_Init]("https://github.com/hku-mars/LiDAR_IMU_Init")
+This is ros2 version **LI_Init** project, your can find the orignal repository at [LI_Init](https://github.com/hku-mars/LiDAR_IMU_Init)
 
 **LI-Init** is a robust, real-time initialization method for LiDAR-inertial system. The proposed method calibrates the temporal offset and extrinsic parameter between LiDARs and IMUs, and also the gravity vector and IMU bias. Our method does not require any target or extra sensor, specific structured environment, prior environment point map or initial values of extrinsic and time offset. Our package address following key issues:
 
