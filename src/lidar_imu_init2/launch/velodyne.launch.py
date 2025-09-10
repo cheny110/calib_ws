@@ -13,7 +13,7 @@ def generate_launch_description():
         parameters=[{
             "point_filter_num":3,
             "max_iteration":5,
-            "cube_side_length": 1000
+            "cube_side_length": 1000.0
         },
         os.path.join(get_package_share_directory("lidar_imu_init2"),"config","velodyne.yaml")
         ]

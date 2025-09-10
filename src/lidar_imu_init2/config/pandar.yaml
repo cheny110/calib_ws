@@ -7,7 +7,7 @@ laser_mapping:
     preprocess:
         lidar_type: 5                # Hesai PandarXT
         scan_line: 32
-        blind: 3
+        blind: 3.0
         feature_extract_en: false
 
     initialization:
@@ -22,8 +22,8 @@ laser_mapping:
     mapping:
         filter_size_surf: 0.1
         filter_size_map: 0.1
-        gyr_cov: 20
-        acc_cov: 2
+        gyr_cov: 20.0
+        acc_cov: 2.0
         b_acc_cov: 0.0001
         b_gyr_cov: 0.0001
         det_range: 120.0

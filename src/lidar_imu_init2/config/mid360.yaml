@@ -8,22 +8,22 @@ laser_mapping:
         lidar_type: 1                # Livox series LiDAR
         feature_extract_en: false
         scan_line: 6
-        blind: 1
+        blind: 1.0
 
     initialization:
         cut_frame_num: 5            # must be positive integer
         orig_odom_freq: 10           # original Lidar frequency
         mean_acc_norm: 9.805         # 1 for livox built-in IMU
-        online_refine_time: 20     # seconds
-        data_accum_length: 500
+        online_refine_time: 20.0     # seconds
+        data_accum_length: 500.0
         Rot_LI_cov: [ 0.00005, 0.00005, 0.00005 ]
         Trans_LI_cov: [ 0.00001, 0.00001, 0.00001 ]
 
     mapping:
         filter_size_surf: 0.05
         filter_size_map: 0.15
-        gyr_cov: 2
-        acc_cov: 2
+        gyr_cov: 2.0
+        acc_cov: 2.0
         b_acc_cov: 0.0001
         b_gyr_cov: 0.0001
         det_range: 100.0

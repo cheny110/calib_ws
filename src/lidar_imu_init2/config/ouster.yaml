@@ -9,7 +9,7 @@ laser_mapping:
     preprocess:
         lidar_type: 3                # Ouster LiDAR
         scan_line: 32
-        blind: 2
+        blind: 2.0
         feature_extract_en: false
 
     initialization:

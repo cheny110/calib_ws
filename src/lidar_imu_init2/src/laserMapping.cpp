@@ -842,7 +842,9 @@ void printProgress(double percentage)
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    rclcpp::Node::SharedPtr node = rclcpp::Node::make_shared("laser_mapping");
+    rclcpp::NodeOptions opts;
+    opts.automatically_declare_parameters_from_overrides(true);
+;    rclcpp::Node::SharedPtr node = rclcpp::Node::make_shared("laser_mapping",opts);
 
     // Get parameters with default values
     node->get_parameter_or<int>("max_iteration", NUM_MAX_ITERATIONS, 4);

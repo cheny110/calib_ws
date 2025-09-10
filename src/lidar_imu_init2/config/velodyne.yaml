@@ -7,7 +7,7 @@ laser_mapping:
     preprocess:
         lidar_type: 2                # Velodyne LiDAR
         scan_line: 16
-        blind: 2
+        blind: 2.0
         feature_extract_en: false
 
     initialization:

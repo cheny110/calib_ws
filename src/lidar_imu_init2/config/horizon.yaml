@@ -8,7 +8,7 @@ laser_mapping:
         lidar_type: 1                # Livox series LiDAR
         feature_extract_en: false
         scan_line: 6
-        blind: 1
+        blind: 1.0
 
     initialization:
         cut_frame_num: 5 # must be positive integer
@@ -22,8 +22,8 @@ laser_mapping:
     mapping:
         filter_size_surf: 0.05
         filter_size_map: 0.15
-        gyr_cov: 50
-        acc_cov: 2
+        gyr_cov: 50.0
+        acc_cov: 2.0
         b_acc_cov: 0.0001
         b_gyr_cov: 0.0001
         det_range:     260.0

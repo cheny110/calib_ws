@@ -2,3 +2,4 @@ build
 install
 .vscode
 log
+__pycache__
